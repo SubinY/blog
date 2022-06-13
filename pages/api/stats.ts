@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import faunadb from 'faunadb'
 import { pick } from '@contentlayer/client'
 import { getMentionsForSlug } from 'lib/webmentions'
-import { allPosts } from '.contentlayer/data'
+import { allPosts } from '../../node_modules/.contentlayer/data'
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const q = faunadb.query

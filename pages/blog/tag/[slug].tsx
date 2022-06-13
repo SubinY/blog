@@ -9,10 +9,10 @@ import PostList from 'components/postlist'
 
 // Utils
 import { pick } from '@contentlayer/client'
-import { allPosts } from '.contentlayer/data'
+import { allPosts } from '../../../node_modules/.contentlayer/data'
 
 // Types
-import type { Post } from '.contentlayer/types'
+import type { Post } from '../../../node_modules/.contentlayer/types'
 
 type TagProps = {
   posts: Post[]

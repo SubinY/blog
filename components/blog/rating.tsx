@@ -15,6 +15,7 @@ const Rating = ({ value, max = 5 }: RatingProps) => {
     <div className={styles.container}>
       {/* Create an array based on the max rating, render a star for each */}
       {Array.from(Array(max).keys()).map((_, i) => (
+        // eslint-disable-next-line react/no-array-index-key
         <Star key={String(i)} className={styles.star} />
       ))}
       {/* Render a div overlayed on top of the stars that are not filled */}

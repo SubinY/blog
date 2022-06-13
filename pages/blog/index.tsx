@@ -17,7 +17,7 @@ import { useCallback, useState } from 'react'
 import { Search } from 'react-feather'
 import PostListSwitch from 'components/postswitch'
 import type { Post } from '.contentlayer/types'
-import { allPosts } from '.contentlayer/data'
+import { allPosts } from '../../node_modules/.contentlayer/data'
 import styles from './index.module.scss'
 
 type BlogProps = {
